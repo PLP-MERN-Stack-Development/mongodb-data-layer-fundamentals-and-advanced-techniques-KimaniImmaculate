@@ -1,59 +1,80 @@
-# MongoDB Fundamentals - Week 1
+# MongoDB Fundamentals – Week 1 Assignment
 
-## Setup Instructions
+## 📦 Project Overview
 
-Before you begin this assignment, please make sure you have the following installed:
-
-1. **MongoDB Community Edition** - [Installation Guide](https://www.mongodb.com/docs/manual/administration/install-community/)
-2. **MongoDB Shell (mongosh)** - This is included with MongoDB Community Edition
-3. **Node.js** - [Download here](https://nodejs.org/)
-
-### Node.js Package Setup
-
-Once you have Node.js installed, run the following commands in your assignment directory:
-
-```bash
-# Initialize a package.json file
-npm init -y
-
-# Install the MongoDB Node.js driver
-npm install mongodb
-```
-
-## Assignment Overview
-
-This week focuses on MongoDB fundamentals including:
-- Creating and connecting to MongoDB databases
-- CRUD operations (Create, Read, Update, Delete)
-- MongoDB queries and filters
+This project demonstrates MongoDB data layer fundamentals and advanced techniques, including:
+- Database setup and connection
+- CRUD operations
+- Advanced queries (filtering, projection, sorting, pagination)
 - Aggregation pipelines
 - Indexing for performance
 
-## Submission
+All code and queries are in [insert_books.js](insert_books.js) and [queries.js](queries.js).
 
-Complete all the exercises in this assignment and push your code to GitHub using the provided GitHub Classroom link.
+## 🛠️ Setup Instructions
 
-## Getting Started
+1. **Install MongoDB Community Edition**  
+   [Installation Guide](https://www.mongodb.com/docs/manual/administration/install-community/)
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+2. **Install Node.js**  
+   [Download Node.js](https://nodejs.org/)
 
-## Files Included
+3. **Initialize your Node.js project**  
+   In your project directory, run:
+   ```sh
+   npm init -y
+   ```
 
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+4. **Install dependencies**  
+   Install the MongoDB Node.js driver:
+   ```sh
+   npm install mongodb
+   ```
 
-## Requirements
+5. **Create a `.gitignore` file**  
+   To avoid committing `node_modules` and other unnecessary files, add:
+   ```
+   node_modules/
+   ```
+   to your `.gitignore`.
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
+6. **Populate the database**  
+   Run the following command to insert sample book data:
+   ```sh
+   node insert_books.js
+   ```
 
-## Resources
+7. **Run queries and aggregation pipelines**  
+   Execute all queries and indexing tasks:
+   ```sh
+   node queries.js
+   ```
+
+## 📂 Files Included
+
+- [insert_books.js](insert_books.js): Script to insert sample book data
+- [queries.js](queries.js): All MongoDB queries, aggregations, and indexing
+- [SETUP_INSTRUCTIONS.md](SETUP_INSTRUCTIONS.md): Troubleshooting and setup help
+- [Week1-Assignment.md](Week1-Assignment.md): Assignment details
+- [examples/](examples/): Example scripts for MongoDB connection and shell usage
+- [screenshots/](screenshots/): Visual evidence of your work
+
+## 🖼️ Screenshots
+
+### MongoDB Compass – Collections and Sample Data
+![MongoDB Compass](screenshots/mongodbcompass.png)
+
+### MongoDB Shell – Query Output
+![MongoDB Shell](screenshots/mongosh.png)
+
+### Indexes Created
+![Indexes](screenshots/indexes.png)
+
+## 📚 Resources
 
 - [MongoDB Documentation](https://docs.mongodb.com/)
+- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/)
 - [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+
+---
+For any issues, see [SETUP_INSTRUCTIONS.md](SETUP_INSTRUCTIONS.md).
